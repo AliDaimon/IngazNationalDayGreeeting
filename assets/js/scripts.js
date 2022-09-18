@@ -70,10 +70,10 @@ let saveImageWithText = () => {
     //عدل المكان هنا
     let x; // coordinate.
     if (txtAlign === "right"  || txtAlign === "start") {
-        x = right + parseInt(paddingRight) ;
+        x = right + parseInt(paddingRight) + 11;
     }
     if (txtAlign === "left" || txtAlign === "start") {
-      x = left + parseInt(paddingLeft) ;
+      x = left + parseInt(paddingLeft) + 11;
     }
     if (txtAlign === "center" || txtAlign === "start") {
       x = center + left;
