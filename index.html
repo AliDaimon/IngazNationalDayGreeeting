@@ -1,0 +1,68 @@
+<html class="h-full bg-gray-100">
+
+<head>
+    <title>Ingaz | Saudi National Day</title>
+    <link rel="icon" type="image/png" href="assets/img/national_day.jpg" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <style>
+        canvas {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body class="max-h-screen overflow-hidden">
+    <nav class="bg-green-700">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-20 items-center justify-between">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex">
+                        <img class="h-16 w-18 rounded-lg" src="assets/img/ingaz.jpg" alt="Your Company">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-white shadow">
+        <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold tracking-tight text-green-600 text-center">National Day Greeting</h1>
+        </div>
+    </header>
+    <main>
+        <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+            <!-- Replace with your content -->
+            <div class="px-4 py-6 sm:px-0">
+                <div class="h-3/4  rounded-lg">
+                    <div class="max-w-xl  m-auto pt-24">
+                        <div class="relative sm:w-[570px] w-96  h-auto border rounded-lg overflow-hidden shadow-lg">
+                            <img src="assets/img/national_day.jpg" id="myimage" alt="national_day_image"
+                                class="object-cover border-none max-w-[100%]" />
+                            <div id='theText' onmousedown='this.style.border = "dashed 2px #FF7F27"; '
+                                class="absolute bottom-[20px] right-[30px] cursor-move block">Your Name Here!</div>
+                        </div>
+                        <div class="sm:flex items-center space-x-4 mt-8">
+                            <input type="text" onkeyup='writeText(this)' id='textArea' placeholder='Enter Your Name'
+                                class=" h-10 flex-grow rounded-md border-gray-300 pl-7 pr-12 focus:border-green-500 focus:ring-green-500 sm:text-sm ring ring-green-500"
+                                required />
+                            <button type="button" onclick="saveImageWithText();" id="bt"
+                                class="inline-flex h-11 items-center rounded-md border border-transparent bg-green-600 px-4  text-sm font-medium text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                </svg>
+                                &ThinSpace; Download
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+</body>
+
+<script src="./assets/js/scripts.js"></script>
+
+</html>
