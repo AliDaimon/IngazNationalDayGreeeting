@@ -55,7 +55,7 @@ let saveImageWithText = () => {
     let paddingRight = window
       .getComputedStyle(textContainer)
       .paddingRight.replace("px", "");
-
+    //console.log("padding",paddingLeft)
     // Get text alignement, colour and font of the text.
     let txtAlign = window.getComputedStyle(textContainer).textAlign;
     let color = window.getComputedStyle(textContainer).color;
@@ -67,9 +67,10 @@ let saveImageWithText = () => {
     ctx.textAlign = txtAlign;
 
     // Now, we need the coordinates of the text.
+    //عدل المكان هنا
     let x; // coordinate.
     if (txtAlign === "right"  || txtAlign === "start") {
-      x = right + parseInt(paddingRight) - 11;
+        x = right + parseInt(paddingRight) 0; //- 11;
     }
     if (txtAlign === "left" || txtAlign === "start") {
       x = left + parseInt(paddingLeft);
@@ -77,7 +78,6 @@ let saveImageWithText = () => {
     if (txtAlign === "center" || txtAlign === "start") {
       x = center + left;
     }
-    console.log(x)
     // Get the text (it can a word or a sentence) to write over the image.
     let str = t.replace(/\n\r?/g, "<br />").split("<br />");
 
