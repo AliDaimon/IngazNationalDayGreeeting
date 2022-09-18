@@ -57,7 +57,6 @@ let saveImageWithText = () => {
       .paddingRight.replace("px", "");
     //console.log("padding",paddingLeft)
     // Get text alignement, colour and font of the text.
-    
     let txtAlign = window.getComputedStyle(textContainer).textAlign;
     let color = window.getComputedStyle(textContainer).color;
     let fnt = window.getComputedStyle(textContainer).font;
