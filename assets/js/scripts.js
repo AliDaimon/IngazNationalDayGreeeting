@@ -59,7 +59,7 @@ let saveImageWithText = () => {
     // Get text alignement, colour and font of the text.
     
     let txtAlign = window.getComputedStyle(textContainer).textAlign;
-    let color = window.getComputedStyle(textContainer).color = white;;
+    let color = window.getComputedStyle(textContainer).color;
     let fnt = window.getComputedStyle(textContainer).font;
     console.log(txtAlign,color,fnt);
     // Assign text properties to the context.
