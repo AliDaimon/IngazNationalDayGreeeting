@@ -72,10 +72,10 @@ let saveImageWithText = () => {
     if (txtAlign === "right"  || txtAlign === "start") {
         x = right + parseInt(paddingRight) + 11;
     }
-    if (txtAlign === "left" || txtAlign === "start") {
+    if (txtAlign === "left" ) {
       x = left + parseInt(paddingLeft) + 11;
     }
-    if (txtAlign === "center" || txtAlign === "start") {
+    if (txtAlign === "center" ) {
       x = center + left;
     }
     // Get the text (it can a word or a sentence) to write over the image.
@@ -86,7 +86,7 @@ let saveImageWithText = () => {
       ctx.fillText(
         str[i].replace("</div>", "").replace("<br>", "").replace(";", ""),
         x,
-        parseInt(paddingTop, 10) + parseInt(top, 10) + 10 + i * 15
+        parseInt(paddingTop, 10) + parseInt(top, 15) + 10 + i * 15
       );
     }
 
