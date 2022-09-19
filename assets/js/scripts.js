@@ -60,7 +60,7 @@ let saveImageWithText = () => {
     let txtAlign = window.getComputedStyle(textContainer).textAlign;
     let color = window.getComputedStyle(textContainer).color;
     let fnt = window.getComputedStyle(textContainer).font;
-    console.log(txtAlign,color,fnt);
+    // console.log(txtAlign,color,fnt);
     // Assign text properties to the context.
     ctx.font = fnt;
     ctx.fillStyle = color;
@@ -70,7 +70,7 @@ let saveImageWithText = () => {
     //عدل المكان هنا
     let x; // coordinate.
     if (txtAlign === "right"  || txtAlign === "start") {
-        x = right + parseInt(paddingRight) - 300;
+        x = right + parseInt(paddingRight) - 280;
     }
     if (txtAlign === "left" ) {
       x = left + parseInt(paddingLeft) + 11;
