@@ -70,7 +70,7 @@ let saveImageWithText = () => {
     //عدل المكان هنا
     let x; // coordinate.
     if (txtAlign === "right"  || txtAlign === "start") {
-        x = right + parseInt(paddingRight) - 280;
+        x = right + parseInt(paddingRight) - 480;
     }
     if (txtAlign === "left" ) {
       x = left + parseInt(paddingLeft) + 11;
@@ -86,7 +86,7 @@ let saveImageWithText = () => {
       ctx.fillText(
         str[i].replace("</div>", "").replace("<br>", "").replace(";", ""),
         x,
-        parseInt(paddingTop, 10) + parseInt(top, 15) + parseInt(paddingRight, 20) + 10 + i * 15
+        parseInt(paddingTop, 10) + parseInt(top, 15.5) + parseInt(paddingRight, 20) + 10 + i * 15
       );
     }
 
